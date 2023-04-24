@@ -178,10 +178,10 @@ body::-webkit-scrollbar-thumb:active {
 .container .movie__selected .grid__container .grid__container__info p{
     text-align: justify;
     padding: 25px 0 50px 0px;
-    font-size: 15px;
+    font-size: 0.8em;
 }
 .container .movie__selected .grid__container .grid__container__info h1{
-    
+    font-size: 1.3em;
     color: #ffffff;
     padding: 5px 0;
     border-bottom: 2px solid red;
@@ -623,6 +623,36 @@ color: white;
         justify-content: center;
     }
 }
+@media (max-width: 1075px){
+
+    .container .movie__selected .grid__container .grid__container__info h1{
+        font-size: 1.3em;
+        color: #ffffff;
+        padding: 5px 0;
+        border-bottom: 2px solid red;
+    }
+    .container .movie__selected .grid__container .grid__container__info p{
+
+        font-size: 0.7em;
+        padding: 10px 0 20px 0px;
+    }
+    .container .movie__selected .grid__container .grid__container__info .grid__container__genres{
+        margin-top: 10px;
+    }
+    .container .movie__selected .grid__container .grid__container__info .grid__container__genres button{
+        margin-top: 5px;
+    }
+}
+@media (max-width: 980px){
+    .container .movie__selected .grid__container .grid__container__img img{
+
+        width: 50%;
+        height: 65%;
+    }
+    .container .movie__selected .grid__container .grid__container__img i{
+        transform: translate(20vw, -65vh);
+    }
+}
 @media (max-width: 850px){
     .container .hero_container .hero .hero__img{
         width: 26%;
@@ -642,9 +672,32 @@ color: white;
     .container .hero2{
         grid-template-columns:repeat(4, 1fr)
     }
+    
 }
 
-
+@media (max-width: 750px){
+    .container .movie__selected .grid__container .grid__container__moviecast{
+        display: none;
+    }
+    .container .movie__selected .grid__container .grid__container__info{
+        grid-row: 1/4;
+        margin-bottom: 70px;
+        padding-left: 20px;
+    }
+    .container .movie__selected .grid__container .grid__container__img a{
+        position: absolute;
+        bottom: 12%;
+        left: 25%;
+        padding: 1%;
+    }
+    .container .movie__selected .grid__container .grid__container__img i{
+        transform: translate(20vw, -70vh);
+    }
+    .container .movie__selected .grid__container .grid__container__img img{
+        width: 80%;
+        height: 60%;
+    }
+}
 @media (max-width: 700px){
     .hero_container{
         height: 150vh !important;
@@ -783,7 +836,49 @@ color: white;
         width: 95%;
     }
 }
+@media (max-width: 545px){
+    .container .movie__selected .grid__container .grid__container__info h1{
+ font-size: 2em
+    }
+    .container .movie__selected .grid__container .grid__container__info p{
+         font-size: 0.8em; 
+
+    }
+    .container .movie__selected .grid__container .grid__container__img a{
+        bottom:20%;
+        width: 80%;
+        left: 10%;
+        padding: 15px;
+    }
+    .container .movie__selected .grid__container .grid__container__info{
+        /* margin-bottom: 20px; */
+        margin: 0px;
+        grid-column: 1/5;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 45px;
+        padding: 0px 10px;
+
+    }
+    .container .movie__selected .grid__container .grid__container__img img{
+        display: none;
+    }
+}
 @media (max-width: 510px){
+    .container .movie__selected .grid__container .grid__container__img a{
+        bottom:8%;
+        width: 80%;
+        left: 10%;
+        padding: 15px;
+    }
+    .container .movie__selected .grid__container .grid__container__info h1{
+        font-size: 1.5em
+           }
+           .container .movie__selected .grid__container .grid__container__info p{
+                font-size: 0.8em; 
+       
+           }
     .container .list .movies__series .movies__series__info{
         flex-wrap: wrap;
     }
@@ -811,4 +906,13 @@ color: white;
     }
     
 
+}
+@media (max-width: 325px){
+    .container .movie__selected .grid__container .grid__container__info h1{
+        font-size: 1.2em
+           }
+           .container .movie__selected .grid__container .grid__container__info p{
+                font-size: 0.8em; 
+       
+           }
 }

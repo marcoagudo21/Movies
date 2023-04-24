@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb:active {
     align-items: flex-start;
     color: white;
     padding-left: 85px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .container .movie__selected .grid__container .grid__container__info p{
     text-align: justify;
@@ -887,7 +887,8 @@ color: white;
         display: none;
     }
     .container .movie__selected .grid__container .grid__container__img i{
-        transform: translate(18vw, -40vh);
+        transform: translate(16vw, -40vh);
+        position: absolute;
 
        }
 }

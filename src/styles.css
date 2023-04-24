@@ -697,6 +697,10 @@ color: white;
         width: 80%;
         height: 60%;
     }
+    .container .movie__selected .grid__container .grid__container__img i{
+        transform: translate(19vw, -68vh);
+
+       }
 }
 @media (max-width: 700px){
     .hero_container{
@@ -805,6 +809,10 @@ color: white;
     .container .hero2{
         grid-template-columns:repeat(3, 1fr)
     }
+    .container .movie__selected .grid__container .grid__container__img i{
+        transform: translate(19vw, -68vh);
+
+       }
 }
 @media (max-width:657px){
     .container .hero_container .hero{
@@ -835,6 +843,10 @@ color: white;
         grid-template-columns: repeat(2, 1fr);
         width: 95%;
     }
+    .container .movie__selected .grid__container .grid__container__img i{
+        transform: translate(18vw, -68vh);
+
+       }
 }
 @media (max-width: 545px){
     .container .movie__selected .grid__container .grid__container__info h1{
@@ -864,6 +876,10 @@ color: white;
     .container .movie__selected .grid__container .grid__container__img img{
         display: none;
     }
+    .container .movie__selected .grid__container .grid__container__img i{
+        transform: translate(18vw, -41vh);
+
+       }
 }
 @media (max-width: 510px){
     .container .movie__selected .grid__container .grid__container__img a{
@@ -879,6 +895,7 @@ color: white;
                 font-size: 0.8em; 
        
            }
+          
     .container .list .movies__series .movies__series__info{
         flex-wrap: wrap;
     }

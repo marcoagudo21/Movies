@@ -117,6 +117,7 @@ const eventos = () => {
     console.log("Leer mas");
     const htmlInfo = `<div class="grid__container">
     <div class="grid__container__info">
+    <i class="fa-regular fa-circle-xmark i__none" style="color: #ff0000;"></i>
     <h1>My Hero Academia: World Heroes Mission</h1>
     <div class="grid__container__genres">
    <button>Animation</button>
@@ -135,6 +136,7 @@ const eventos = () => {
               the heroes to save the world and the future of heroes in what is
               the most dangerous crisis to take place yet in My Hero Academia.
     </p>
+    <a href="" class="btn__trailer btn__trailer2" target="_blank" >View Trailer</a>
     </div>
     <div class="grid__container__img">
     <img src="https://image.tmdb.org/t/p/original/AsTlA7dj2ySGY1pzGSD0MoHFhEF.jpg" alt="" width="50%" height="75%">
@@ -178,6 +180,7 @@ const eventos = () => {
   ) => {
     const htmlInfo = `<div class="grid__container">
             <div class="grid__container__info">
+            <i class="fa-regular fa-circle-xmark i__none" style="color: #ff0000;"></i>
             <h1>${original_title}</h1>
             <div class="grid__container__genres">
             ${genres.map((genre) => `<button>${genre.name}</button>`).join("")}
@@ -186,10 +189,11 @@ const eventos = () => {
             <p>
             ${overview}
             </p>
+            <a href="" class="btn__trailer btn__trailer2" target="_blank" >View Trailer</a>
             </div>
             <div class="grid__container__img">
             <img src="https://image.tmdb.org/t/p/original/${poster_path}" alt="" width="50%" height="75%">
-            <i class="fa-regular fa-circle-xmark" style="color: #ff0000;"></i>
+            <i class="fa-regular fa-circle-xmark fa-regular2" style="color: #ff0000;"></i>
             <a href="" class="btn__trailer" target="_blank" >View Trailer</a>
             </div>
             <div class="grid__container__moviecast">
@@ -210,7 +214,15 @@ const eventos = () => {
 
     document
       .querySelector(".fa-regular")
-      .addEventListener("click", () =>
+      .addEventListener("click", (e) =>
+        informacion.classList.replace(
+          "movie__selected",
+          "movie__selected__none"
+        )
+      );
+      document
+      .querySelector(".fa-regular2")
+      .addEventListener("click", (e) =>
         informacion.classList.replace(
           "movie__selected",
           "movie__selected__none"
